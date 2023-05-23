@@ -57,7 +57,7 @@ public class MusikOffFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_musikoff, container, false);
         listView = view.findViewById(R.id.listViewSong);
-        searchView = view.findViewById(R.id.searchView);
+        searchView = view.findViewById(R.id.search_view);
         songsList = new ArrayList<>();
         ImageButton urutkanButton = view.findViewById(R.id.urutkan);
         Button putarSemuaButton = view.findViewById(R.id.btnPutarSemua);
