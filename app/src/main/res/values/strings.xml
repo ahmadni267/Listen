@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">listen</string>
+    <string-array name="dropdown_items">
+        <item>Inggris</item>
+        <item>Jepang</item>
+        <item>Arab</item>
+    </string-array>
+</resources>

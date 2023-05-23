@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PenyanyiFragment"
+    android:background="@color/AbuGelap">
+
+    <RelativeLayout
+        android:layout_width="148dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/borderbesar"
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayout7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView15"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="33dp"
+            android:text="NAMA ARTIS"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="125dp"
+            android:layout_height="153dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/list_bg_album" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="148dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/borderbesar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout6">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView12"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="33dp"
+            android:text="NAMA ARTIS"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="125dp"
+            android:layout_height="153dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/list_bg_album" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="148dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/borderbesar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/navmenu">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView13"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="33dp"
+            android:text="NAMA ARTIS"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="125dp"
+            android:layout_height="153dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/list_bg_album" />
+    </RelativeLayout>
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="350dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/shapesearch"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navmenu"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_marginTop="32dp"
+        app:backgroundTint="@color/AbuGelap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
+        app:menu="@menu/nav_menu" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="148dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/borderbesar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navmenu">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView16"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="NAMA ARTIS"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="125dp"
+            android:layout_height="153dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/list_bg_album" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

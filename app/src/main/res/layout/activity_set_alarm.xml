@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444"
+    tools:context=".SetAlarm">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="UBAH ALARM"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnback3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnback3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#444444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+
+    <TextView
+        android:id="@+id/textTahunAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="HIDUP"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/dropdown_bahasa"-->
+    <!--        android:layout_width="318dp"-->
+    <!--        android:layout_height="46sp"-->
+    <!--        android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"-->
+    <!--        android:drawableRight="@drawable/baseline_keyboard_arrow_down_24"-->
+    <!--        android:drawablePadding="8dp"-->
+    <!--        android:text="Bahasa"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.41"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView18"-->
+    <!--        tools:layout_editor_absoluteY="426dp" />-->
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="MATI"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/timeButtonOn"
+        app:layout_constraintStart_toStartOf="@+id/timeButtonOn"
+        app:layout_constraintTop_toBottomOf="@+id/timeButtonOn" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="320sp"
+        android:layout_height="2sp"
+        android:layout_marginTop="20dp"
+        android:background="#d9d9d9"
+        app:layout_constraintEnd_toEndOf="@+id/timeButtonOff"
+        app:layout_constraintStart_toStartOf="@+id/timeButtonOff"
+        app:layout_constraintTop_toBottomOf="@+id/timeButtonOff" />
+
+    <TextView
+        android:id="@+id/textJumlahLaguAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:text="BAHASA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Pilih Bahasa:"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJumlahLaguAlbum" />
+
+
+    <Button
+        android:id="@+id/btnsimpan"
+        android:layout_width="206dp"
+        android:layout_height="36dp"
+        android:background="@drawable/butonoren"
+        android:text="SIMPAN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdownbhs" />
+
+    <Button
+        android:id="@+id/timeButtonOn"
+        style="?android:spinnerStyle"
+        android:layout_width="318sp"
+        android:layout_height="46sp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:gravity="center"
+        android:onClick="popTimePickerOn"
+        android:text="Aktif"
+
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTahunAlbum" />
+
+    <Button
+        android:id="@+id/timeButtonOff"
+        style="?android:spinnerStyle"
+        android:layout_width="318sp"
+        android:layout_height="46sp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:gravity="center"
+        android:onClick="popTimePickerOff"
+        android:text="Non-Aktif"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <AutoCompleteTextView
+        android:id="@+id/dropdownbhs"
+        android:layout_width="318dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dropdown"
+        android:drawableRight="@drawable/baseline_arrow_drop_down_24"
+        android:editable="false"
+        android:gravity="center"
+        android:text="PILIH BAHASA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+
+        style="@style/AutoCompleteTextViewStyle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

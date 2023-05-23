@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/AbuGelap">
+
+    <RelativeLayout
+        android:id="@+id/relativeAlbum"
+        android:layout_width="170dp"
+        android:layout_height="228dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/borderbesar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textJumlahLaguAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textIdAlbum"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="21dp"
+            android:text="JUMLAH LAGU"
+            android:textColor="@color/putih"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textTahunAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textArtisAlbum"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="TAHUN"
+            android:textColor="@color/putih"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textArtisAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textIdAlbum"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="ARTIS"
+            android:textColor="@color/putih"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/imageAlbum"
+            android:layout_width="125dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/list_bg_album"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textIdAlbum"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageAlbum"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="JUDUL ALBUM"
+            android:textColor="@color/putih" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

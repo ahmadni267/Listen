@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AbuGelap"
+    tools:context=".MusikOnFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listViewSong"
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/AbuGelap"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPutarSemua" />
+
+    <ImageButton
+        android:id="@+id/checklist2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:elevation="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/checklist"
+        app:layout_constraintEnd_toStartOf="@+id/urutkan"
+        app:layout_constraintTop_toBottomOf="@+id/navmenu" />
+
+    <Button
+        android:id="@+id/btnPutarSemua"
+        android:layout_width="179dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/playputih"
+        android:padding="8dp"
+        android:background="@drawable/borderputar"
+        android:text="Putar Semua"
+        android:textSize="14sp"
+        android:textColor="@color/putih"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navmenu" />
+
+    <ImageButton
+        android:id="@+id/urutkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/urutkan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navmenu" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="32dp"
+        app:backgroundTint="@color/AbuGelap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
+        app:menu="@menu/nav_menu" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="350dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/shapesearch"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="LAGU"
+        android:id="@+id/Lagu" />
+    <item android:title="PENYANYI"
+        android:id="@+id/Penyanyi" />
+    <item android:title="ALBUM"
+        android:id="@+id/Album"/>
+</menu>

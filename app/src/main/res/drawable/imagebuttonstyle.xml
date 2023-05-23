@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style name="Theme.AppTheme" parent="...">
+    <!-- ... pengaturan lainnya ... -->
+    <item name="imageButtonStyle">@style/ImageButtonStyle</item>
+</style>

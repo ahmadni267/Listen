@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title=""
+        android:icon="@drawable/musikonline"
+        android:id="@+id/MusikOn"/>
+    <item android:title=""
+        android:icon="@drawable/musicksaya"
+        android:id="@+id/MusikOff" />
+    <item android:title=""
+        android:icon="@drawable/playlist"
+        android:id="@+id/Playlist"/>
+    <item android:title=""
+        android:icon="@drawable/akun"
+        android:id="@+id/Akun"/>
+</menu>

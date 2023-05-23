@@ -1,0 +1,126 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginStart="8dp"
+    android:background="@color/AbuGelap"
+    android:layout_marginBottom="56dp">
+
+
+    <ImageView
+        android:id="@+id/more_vert"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/more_vert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/favorite"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="8dp"
+        android:src="@drawable/favorite_off"
+        app:layout_constraintEnd_toStartOf="@+id/more_vert"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="290dp"
+        android:layout_height="86dp"
+        android:background="@color/AbuGelap"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textNomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="27dp"
+            android:elevation="8dp"
+            android:text="01"
+            android:textColor="@color/putih"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgsong"
+            android:layout_width="53dp"
+            android:layout_height="63dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/textNomor"
+            android:background="@drawable/logomusic" />
+
+        <TextView
+            android:id="@+id/txtsongname"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/imgsong"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Song name"
+            android:textColor="#FFF"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/ArtisLagu"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtsongname"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/imgsong"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="6dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Artist name"
+            android:textColor="#FFF"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/DurasiLagu"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="43dp"
+            android:layout_toEndOf="@+id/ArtisLagu"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="6dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Durasi Lagu"
+            android:textColor="#FFF"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

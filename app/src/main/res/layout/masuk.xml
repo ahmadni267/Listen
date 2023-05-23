@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btndaftarakun"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444"
+    tools:context=".masuk">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20dp"
+        android:text="MASUK"
+        android:textColor="#d9d9d9"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emaillogin"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_input"
+        android:ems="10"
+        android:fontFamily="@font/roboto_thin"
+        android:hint="email"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="#d9d9d9"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="225dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_input"
+        android:ems="10"
+        android:fontFamily="@font/roboto_thin"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="#d9d9d9"
+        app:layout_constraintEnd_toEndOf="@+id/emaillogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emaillogin"
+        app:layout_constraintTop_toBottomOf="@+id/emaillogin" />
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/butonoren"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Masuk"
+        app:layout_constraintEnd_toEndOf="@+id/passwordlogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordlogin"
+        app:layout_constraintTop_toBottomOf="@+id/passwordlogin" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="or"
+        android:textColor="#d9d9d9"
+
+        app:layout_constraintEnd_toEndOf="@+id/btnlogin"
+        app:layout_constraintStart_toStartOf="@+id/btnlogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+
+    <Button
+        android:id="@+id/btndaftar"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/butonabu"
+        android:fontFamily="@font/roboto_medium"
+
+        android:text="Daftar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/textView2"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnhidepw"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordlogin"
+        app:layout_constraintEnd_toEndOf="@+id/emaillogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/passwordlogin"
+        app:layout_constraintTop_toTopOf="@+id/passwordlogin"
+        app:layout_constraintVertical_bias="0.476"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

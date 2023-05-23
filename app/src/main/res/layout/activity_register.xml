@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btndaftarakun"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="DAFTAR"
+        android:textColor="#d9d9d9"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bg_input"
+        android:ems="10"
+        android:fontFamily="@font/roboto_thin"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/daftaremail"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bg_input"
+        android:ems="10"
+        android:fontFamily="@font/roboto_thin"
+        android:hint="email"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="#d9d9d9"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/daftarpassword"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bg_input"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="#d9d9d9"
+        app:layout_constraintEnd_toEndOf="@+id/daftaremail"
+        app:layout_constraintStart_toStartOf="@+id/daftaremail"
+        app:layout_constraintTop_toBottomOf="@+id/daftaremail" />
+
+    <Button
+        android:id="@+id/btndaftar2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/butonoren"
+        android:fontFamily="@font/roboto_bold"
+        android:text="DAFTAR"
+        app:layout_constraintEnd_toEndOf="@+id/daftarpassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/daftarpassword"
+        app:layout_constraintTop_toBottomOf="@+id/daftarpassword" />
+
+    <Button
+        android:id="@+id/btnmasukkembali"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/butonoren"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Masuk"
+        app:layout_constraintEnd_toEndOf="@+id/btndaftar2"
+        app:layout_constraintStart_toStartOf="@+id/btndaftar2"
+        app:layout_constraintTop_toBottomOf="@+id/btndaftar2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

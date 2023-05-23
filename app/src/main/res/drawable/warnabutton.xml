@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background color -->
+    <item android:drawable="@color/AbuGelap" />
+
+    <!-- Button image -->
+    <item android:drawable="@drawable/baseline_restart_alt_24" />
+
+</layer-list>
